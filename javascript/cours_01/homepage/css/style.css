@@ -2,18 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 /*Normalize*/
-h1, h2, h3, h4, a, p, ul, li {
+ul, li {
+	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-ul {
-	list-style: none;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
-	padding: 50px 0;
 }
 
 .container {
@@ -21,11 +18,24 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 }
-header {
-	height: 30vh;
+header h1 {
+	position: relative;
+	display: inline-block;
+	font-size: 6rem;
+	font-weight: 700;
+	color: #000;
 }
-header .container {
+header h1:after {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	right: 0;
+	bottom: -20px;
+	height: 10px;
+	width: 30%;
+	background-color: #FFDC00;
 }
+
 .content {
 	margin-bottom: 40px;
 }
@@ -53,4 +63,8 @@ h3 {
 p {
 	font-size: 1.4rem;
 	margin-bottom: 40px;
+}
+iframe {
+	width: 100%;
+	min-height: 500px;
 }
