@@ -42,9 +42,9 @@ header h1:after {
 article {
 	margin-bottom: 100px;
 }
-article:last-child {
+/*article:last-child {
 	margin-bottom: 0;
-}
+}*/
 article header {
 	margin-bottom: 40px;
 	height: initial;
@@ -67,4 +67,5 @@ p {
 iframe {
 	width: 100%;
 	min-height: 500px;
+	border: 0;
 }
